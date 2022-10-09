@@ -15,9 +15,13 @@ jobs:
         run: sudo apt install -y libcppunit-dev
       - name: list
         run: ls -a
+      - name: change permission
+        run: chmod +x configure
       - name: configure
         run: ./configure
       - name: make
         run: make
       - name: make test
         run: make test
+      - name: cd
+        run: cd ../ && ls -a
