@@ -22,4 +22,7 @@ jobs:
       - name: make
         run: make
       - name: cd
-        run: cd ../ && ls -a
+        run: ls -a
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Changed files
