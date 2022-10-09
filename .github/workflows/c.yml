@@ -22,7 +22,7 @@ jobs:
       - name: make
         run: make
       - name: c compiler
-        run: code.c -o outputfile.exe
+        run: gcc code.c -o outputfile.exe
       - name: cd
         run: ls -a
       - uses: stefanzweifel/git-auto-commit-action@v4
